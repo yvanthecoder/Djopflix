@@ -82,7 +82,7 @@ fun TvShowCard(name: String, imageUrl: String) {
         elevation = CardDefaults.cardElevation(4.dp),
         shape = RoundedCornerShape(12.dp),
         colors = CardDefaults.cardColors(
-            containerColor = MaterialTheme.colorScheme.primaryContainer
+            containerColor = Color.DarkGray
         )
     ) {
         Column(
@@ -102,9 +102,10 @@ fun TvShowCard(name: String, imageUrl: String) {
             Spacer(modifier = Modifier.height(8.dp))
             Text(
                 text = name,
-                style = MaterialTheme.typography.titleMedium,
-                color = MaterialTheme.colorScheme.onPrimaryContainer,
-                textAlign = TextAlign.Center,
+                style = MaterialTheme.typography.titleMedium.copy(
+                    color = Color.White,
+                    textAlign = TextAlign.Center
+                ),
                 maxLines = 2,
                 modifier = Modifier.fillMaxWidth()
             )
