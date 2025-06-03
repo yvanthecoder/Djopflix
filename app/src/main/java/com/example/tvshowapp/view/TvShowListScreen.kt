@@ -45,7 +45,6 @@ fun TvShowListScreen(viewModel: TvShowViewModel = viewModel()) {
             textAlign = TextAlign.Center
         )
 
-        // Corps principal
         if (tvShows.value.isEmpty()) {
             Box(
                 modifier = Modifier.fillMaxSize(),
